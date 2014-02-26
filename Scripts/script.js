@@ -3,7 +3,7 @@ var demoApp = angular.module('demoApp', []);
 
 demoApp.config(function ($routeprovider) {
     $routeprovider
-        .when('/',
+        .when('/view1',
         {
             controller: 'simpleController',
             templateUrl: 'Partials/View1.html'
@@ -13,7 +13,7 @@ demoApp.config(function ($routeprovider) {
             controller: 'simpleController',
             templateUrl: 'Partials/View2.html'
         })
-        .otherwise({ redirectTo: '/' })
+        .otherwise({ redirectTo: '/view1' })
 });
 /*var controllers = {};
 controllers.simpleController = function($scope) {
