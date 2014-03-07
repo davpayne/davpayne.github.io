@@ -1,7 +1,7 @@
 var profileControllers = angular.module('profileControllers', ['ngResource']);
 
 profileControllers.controller('ButtonsCtrl', ['$scope', function($scope) { 
-  $scope.quoteTags =[
+ /* $scope.quoteTags =[
     {
       label: "Habits",
       tag: "Habits"
@@ -57,7 +57,7 @@ profileControllers.controller('ButtonsCtrl', ['$scope', function($scope) {
       label: "Planning",
       tag: "Planning"
     }
-  ];
+  ];*/
 
   $scope.quotes = [{
     text: "You are who you choose to be.",
