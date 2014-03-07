@@ -1,0 +1,69 @@
+<div class="resume container">
+<h1 class="text-center">David Payne's Resume</h1>
+<div class="row">
+    <div class="container">
+        <button type="button" ng-model="resume" btn-radio="'Default'" class="hidden-print">Default</button>
+        <button type="button" ng-model="resume" btn-radio="'Developer/UX Researcher'" class="hidden-print">Developer/UX Researcher</button>
+        <button type="button" ng-model="resume" btn-radio="'Project Manager'" class="hidden-print">Project Manager</button>
+        <button type="button" ng-model="resume" btn-radio="'Teacher'" class="hidden-print">Teacher</button>
+        <button type="button" ng-model="resume" btn-radio="''" class="hidden-print">Show All</button>
+    </div>
+    <div class="col-xs-12">
+        <div class="visible-print text-center"><hr />
+        <p>Contact: dpayne162@gmail.com | Houston, TX 77005</p>
+        <hr /></div>
+        <p>Summary</p>
+    </div>
+    <div id="skills" class="col-xs-12 col-md-6">
+        <h3>Skills</h3>
+        <button type="button" ng-model="search" btn-radio="''" class="hidden-print">Show All</button>
+        <button type="button" ng-model="search" btn-radio="'Functional'" class="hidden-print">Functional</button>
+        <button type="button" ng-model="search" btn-radio="'Technical'" class="hidden-print">Technical</button>
+        <!--<p>Levels: <span ng-repeat="level in levels"> {{level}} </span></p>-->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="skill in skills | filter:{type: search, resume: resume} | orderBy:'label'" ng-click="display(skill.label)" class="my-repeat-animation">
+                    <td>{{skill.label}}</td>
+                    <td>{{skill.level}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Awards and Honors</h3>
+        <ul>
+            <li ng-repeat="award in awards">
+                <h5><span class="title">{{award.title}}</span><span class="organization">, {{award.organization}}</span></h5>
+                <h6>Awarded: {{award.date}}</h6>
+                <p>{{award.summary}}</p>
+        </ul>
+    </div>
+    <div id="experience" class="col-xs-12 col-md-6">
+        <h3>Experiences</h3>
+        <button type="button" ng-click="display('')" class="hidden-print">Show All</button>
+        <ul>
+            <li ng-repeat="experienceCategory in experienceCategories" class="my-repeat-animation">
+                <h4>{{experienceCategory}}</h4>
+                <ul>
+                    <li ng-repeat="experience in experiences | filter:{tags: skillLabel, category: experienceCategory}" class="my-repeat-animation">
+                        <h5><span class="title">{{experience.title}}</span><span class="organization">, {{experience.organization}}</span></h5>
+                        <h6>{{experience.start}} - {{experience.end}}</h6>
+                        <p>{{experience.summary}}</p>
+                        <ul class="bullets">
+                            <li ng-repeat="bullet in experience.bullets"> {{bullet}}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--<p ng-click="show = !show">Show</p>
+    <div ng-show="show">
+        <p>it works!</p>
+    </div>-->
+</div>

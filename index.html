@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html ng-app="demoApp">
-<head>
-    <title></title>
-</head>
+<html lang="en" ng-app="profile">
+    <head>
+        <meta charset="utf-8">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+        <link href="style.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-route.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-resource.js"></script>
+        <script type="text/javascript" src="http://code.angularjs.org/1.2.12/angular-animate.js"></script>
+        <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>David Payne's Profile</title>
+
+    </head>
     <body>
-        <div>
-            <div ng-view=""></div>
-        </div>
-        <p>test</p>
-        <script src="Scripts/angular.min.js"></script>
-        <script src="Scripts/script.js"></script>
-    </body>
+<!-- loads the partial. Presents the word 'loading' as resource is loaded or if load fails -->
+<div ng-include="'partials/navbar.html'"></div>
+<div ng-view="" id="partial">Loading...</div>
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--  <script src="Scripts/jquery.scrollTo/jquery.scrollTo.min.js"></script>  couldn't get to work-->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="controllers.js"></script>
+  </body> 
 </html>
