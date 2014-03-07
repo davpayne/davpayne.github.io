@@ -396,7 +396,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
        "Initiated a new financial accountability system and set priorities to eliminate a $6,000 debt and pass on a $10,000 surplus",
        "Restructured the college government to increase productivity and accountability",
        "Initiated and directed an $8,000 renovation of the college’s private dining room and one kitchenette"],
-       tags: "Project/Program Management Strategic Planning Mentoring Stakeholder Analysis Communication Planning and Delivery",
+       tags: "Project/Program Management Strategic Planning Mentoring Stakeholder Analysis Communication Planning and Delivery Change Management",
        category: "University Experiences",
       resume: "Project Manager Teacher Default"
     },{
@@ -447,7 +447,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       bullets: ["Utilized Python 2.7, Flask, and SQL as well as Git and Heroku",
       "Developed a program to search blocks of text for user-identified words",
       "Built a potluck planning app to allow users to solicit and track contributions from event attendees"],
-      tags: "Python SQL Flask Git Heroku",
+      tags: "Python SQL Flask Git Heroku HTML CSS",
       category: "Classes",
       resume: "Developer/UX Researcher Default"
     },{

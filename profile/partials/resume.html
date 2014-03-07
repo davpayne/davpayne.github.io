@@ -4,7 +4,7 @@
 <div class="row">
     <div class="hidden-print text-center">
         <div class="btn-group">
-            <button type="button" class="btn btn-default" ng-model="resume" btn-radio="'Default'">Default</button>
+            <button type="button" class="btn btn-default" ng-model="resume" btn-radio="'Default'" ng-init="resume='Default'">Default</button>
             <button type="button" class="btn btn-default" ng-model="resume" btn-radio="'Developer/UX Researcher'">Developer/UX Researcher</button>
             <button type="button" class="btn btn-default" ng-model="resume" btn-radio="'Project Manager'">Project Manager</button>
             <button type="button" class="btn btn-default" ng-model="resume" btn-radio="'Teacher'">Teacher</button>
@@ -31,7 +31,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="skill in skills | filter:{type: search, resume: resume} | orderBy:'label'" ng-click="display(skill.label)" class="my-repeat-animation">
+                <tr ng-repeat="skill in skills | filter:{type: search, resume: resume} | orderBy:'label'" ng-click="display(skill.label)" class="my-repeat-animation" >
                     <td>{{skill.label}}</td>
                     <td>{{skill.level}}</td>
                 </tr>
@@ -49,7 +49,7 @@
     </div>
     <div id="experience" class="col-xs-12 col-md-6">
         <h3>Experiences</h3>
-<!--         <button type="button" ng-click="display('')" class="hidden-print">Show All</button> -->
+        <button type="button" ng-click="display('')" class="hidden-print">Show All</button>
         <ul>
             <li ng-repeat="experienceCategory in experienceCategories" class="my-repeat-animation">
                 <h4>{{experienceCategory}}</h4>
