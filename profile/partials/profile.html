@@ -25,7 +25,7 @@ While not working, I am always trying to learn something new and occasionally de
     </div>
       <div class="col-xs-12 col-md-6">
         <figure class="text-center">
-          <img src="https://googledrive.com/host/0B9F5kpTpkKMUbzh6dVZoTDZMa1E/david_payne.jpg" alt="My profile pic" class="img-thumbnail" />
+          <img src="https://googledrive.com/host/0B9F5kpTpkKMUbzh6dVZoTDZMa1E/david_payne.jpg" alt="My profile pic" class="img-rounded" />
         </figure>
       </div>
 
@@ -56,15 +56,13 @@ While not working, I am always trying to learn something new and occasionally de
         <h2>Favorite Quotes</h2>
         <div>
             <div class="btn-group">
-                <button type="button" class="btn btn-primary" ng-model="quoteSearch.tags" btn-radio="''">All</button>
-                <button type="button" class="btn btn-primary" ng-model="quoteSearch.tags" btn-radio="'Top5'">Top 5 of the Moment</button>
-                <button type="button" class="btn btn-primary" ng-model="quoteSearch.tags" btn-radio="'Leadership'">Leadership</button>
-                <button type="button" class="btn btn-primary" ng-model="quoteSearch.tags" btn-radio="'Mindset'">Mindset</button>
-                <button type="button" class="btn btn-primary" ng-model="quoteSearch.tags" btn-radio="'Limits'">Limits of Human Ability</button>
+                <button type="button" class="btn btn-primary" ng-click="display('')">All</button>
+                <button type="button" class="btn btn-success" ng-click="display('Top5')">Top 5 of the Moment</button>
+                <button ng-repeat="quoteTag in quoteTags | orderBy:'label'" type="button" class="btn btn-default" ng-click="display(quoteTag.tag)">{{quoteTag.label}}</button>
             </div>
-            <br />
+            <div class="space"></div>
             <ul class="list-group" ng-hide="quoteSearch==undefined">
-                <li ng-repeat="quote in quotes | filter:quoteSearch" class="list-group-item">
+                <li ng-repeat="quote in quotes | filter:{tags: quoteSearch} | orderBy:'author'" class="list-group-item">
                 {{quote.text}}<br />
                 <small>{{quote.author}}</small>
                 </li>

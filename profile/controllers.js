@@ -1,6 +1,64 @@
 var profileControllers = angular.module('profileControllers', ['ngResource']);
 
 profileControllers.controller('ButtonsCtrl', ['$scope', function($scope) { 
+  $scope.quoteTags =[
+    {
+      label: "Habits",
+      tag: "Habits"
+    },{
+      label: "Mindset",
+      tag: "Mindset"
+    },{
+      label: "Leadership",
+      tag: "Leadership"
+    },{
+      label: "Limits of Human Ability",
+      tag: "Limits"
+    },{
+      label: "Relationships with and recognition of others",
+      tag: "Relationships"
+    },{
+      label: "Teaching/Educating",
+      tag: "Teaching"
+    },{
+      label: "Motivation",
+      tag: "Motivation"
+    },{
+      label: "Teamwork",
+      tag: "Teamwork"
+    },{
+      label: "Humorous",
+      tag: "Humorous"
+    },{
+      label: "Skill Acquisition",
+      tag: "Practice"
+    },{
+      label: "Me",
+      tag: "Me"
+    },{
+      label: "Miscellaneous",
+      tag: "Miscellaneous"
+    },{
+      label: "Change",
+      tag: "Change"
+    },{
+      label: "Control",
+      tag: "Control"
+    },{
+      label: "Confidence",
+      tag: "Confidence"
+    },{
+      label: "Dedication and Commitment",
+      tag: "Dedication"
+    },{
+      label: "Failure and Criticism",
+      tag: "Failure"
+    },{
+      label: "Planning",
+      tag: "Planning"
+    }
+  ];
+
   $scope.quotes = [{
     text: "You are who you choose to be.",
     author: "Iron Giant",
@@ -33,9 +91,75 @@ profileControllers.controller('ButtonsCtrl', ['$scope', function($scope) {
         text: "One machine can do the work of 50 ordinary men. No machine can do the work of one extraordinary man.",
         author: "Elbert Hubbard",
         tags: "Limits"
-      }             
+      },{
+        text: "Behold the turtle. He only makes progress when he sticks his neck out.",
+        author: "James Bryant Conant",
+        tags: "Mindset"
+      },{
+        text: "Trials, temptations, disappointments -- all these are helps instead of hindrances, if one uses them rightly. They not only test the fiber of character but strengthen it...Every trial endured and weathered in the right spirit makes a soul nobler and stronger than it was before.",
+        author: "James Buckham",
+        tags: ""
+      },{
+        text: "When obstacles arise, you change your direction to reach your goal, you do not change your decision to get there.",
+        author: "Zig Ziglar",
+        tags: ""
+      },{
+        text: "There is no point at which you can say, 'Well, I'm successful now. I might as well take a nap.'",
+        author: "Carrie Fisher",
+        tags: ""
+      },{
+        text: "It is not the mountain we conquer, but ourselves.",
+        author: "Sir Edmund Hilary",
+        tags: ""
+      },{
+        text: "People who believe the world can't be changed are less likely to change the world.",
+        author: "unattributed",
+        tags: ""
+      },{
+        text: "Odds are strong that the experience wasn’t perfect, that parts of it were unpleasant. In those cases, excellent performers respond by adapting the way they act; average performers respond by avoiding those situations in the future.",
+        author: "Geoff Colvin",
+        tags: ""
+      },{
+        text: "Great performance is not reserved for a preordained few. It is available to you and to everyone.",
+        author: "Geoff Colvin",
+        tags: ""
+      },{
+        text: "If people knew how hard I had to work to gain my mastery, it would not seem so wonderful at all.",
+        author: "Michelangelo",
+        tags: ""
+      },{
+        text: "Try again. Fail again. Fail better.",
+        author: "Samuel Beckett",
+        tags: ""
+      },{
+        text: "There is absolutely no evidence of a 'fast track' for high achievers.",
+        author: "John Sloboda",
+        tags: ""
+      },{
+        text: "An expert is a person who has made all the mistakes that can be made in a very narrow field.",
+        author: "Niels Bohr",
+        tags: ""
+      },{
+        text: "A great nation is like a great man: When he makes a mistake, he realizes it. Having realized it, he admits it. Having admitted it, he corrects it. He considers those who point out his faults as his most benevolent teachers.",
+        author: "Lao Tzu",
+        tags: ""
+      },{
+        text: "Men give me credit for some genius. All the genius I have lies in this; when I have a subject in hand, I study it profoundly. Day and night it is before me. My mind becomes pervaded with it. Then the effort that I have made is what people are pleased to call the fruit of genius. It is the fruit of labor and thought.",
+        author: "Alexander Hamilton",
+        tags: ""
+      },{
+        text: "The only good idea is an implemented idea...that stays implemented!",
+        author: "William Byham",
+        tags: ""
+      },{
+        text: "Do not let what you cannot do interfere with what you can do.",
+        author: "John Wooden",
+        tags: ""
+      }                      
       ];
-
+    $scope.display = function(quoteSearch) {
+      $scope.quoteSearch = quoteSearch;
+    };
 }]);
 
 profileControllers.controller('ResumeCtrl', ['$scope',
@@ -52,102 +176,102 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       label: "Data Analysis",
       level: "Proficient",
       type: "Functional",
-      resume: "Project Manager Developer/UX Researcher"
+      resume: "Project Manager Developer/UX Researcher Teacher Default"
     },{
       label: "Usability Testing",
       level: "Proficient",
       type: "Functional",
-      resume: "Developer/UX Researcher"
+      resume: "Developer/UX Researcher Default"
     },{
       label: "Strategic Planning",
       level: "Novice",
       type: "Functional",
-      resume: ""
+      resume: "Project Manager Teacher Default"
     },{
       label: "Project/Program Management",
       level: "Proficient",
       type: "Functional",
-      resume: ""
+      resume: "Developer/UX Researcher Project Manager Default"
     },{
       label: "Python",
       level: "Proficient",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher Default"
     },{
       label: "Microsoft Excel",
       level: "Advanced",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher Project Manager"
     },{
       label: "Training/Teaching",
       level: "Advanced",
       type: "Functional",
-      resume: ""
+      resume: "Project Manager Teacher Default"
     },{
       label: "Research Plan Design",
       level: "Proficient",
       type: "Functional",
-      resume: ""
+      resume: "Developer/UX Researcher Default"
     },{
       label: "Communication Planning and Delivery",
       level: "Proficient",
       type: "Functional",
-      resume: ""
+      resume: "Project Manager Teacher"
     },{
       label: "Mentoring",
       level: "Proficient",
       type: "Functional",
-      resume: ""
+      resume: "Project Manager Teacher"
     },{
       label: "Change Management",
       level: "Proficient",
       type: "Functional",
-      resume: ""
+      resume: "Project Manager Default"
     },{
       label: "AngularJS",
       level: "Proficient",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher Default"
     },{
       label: "HTML",
       level: "Proficient",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher Default"
     },{
       label: "CSS",
       level: "Proficient",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher Default"
     },{
       label: "SQL",
       level: "Novice",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher"
     },{
       label: "Flask",
       level: "Proficient",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher"
     },{
       label: "Git",
       level: "Novice",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher"
     },{
       label: "Heroku",
       level: "Novice",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher"
     },{
       label: "SPSS",
       level: "Novice",
       type: "Technical",
-      resume: ""
+      resume: "Developer/UX Researcher"
     },{
       label: "Stakeholder Analysis",
       level: "Proficient",
       type: "Functional",
-      resume: ""
+      resume: "Developer/UX Researcher Project Manager Teacher Default"
     }];
     
     $scope.awards = [
@@ -156,31 +280,31 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       organization: "Houston Human Factors and Ergonomics Society",
       date: "May 2013",
       summary: "Research on the timed introduction of predictive spell-check on smartphones selected as the Best Student Research Poster at the Houston Human Factors and Ergonomics Society Annual Conference.",
-      resume: ""
+      resume: "Developer/UX Researcher Teacher Default"
     },{
       title: "Outstanding Senior Award",
       organization: "Rice University",
       date: "May 2013",
       summary: "Selected for one of 10 campus-wide Outstanding Senior Awards. The awards are given to graduating seniors who have contributed the most to excellence at Rice University.",
-      resume: ""
+      resume: "Developer/UX Researcher Project Manager Teacher Default"
     },{
       title: "Olga Keith Wiess College Service Award",
       organization: "Wiess Residential College - Rice University",
       date: "March 2013",
       summary: "Awarded to the graduating senior who has contributed the most to Wiess College as determined by a student committee.",
-      resume: ""
+      resume: "Project Manager Teacher Default"
     },{
       title: "Mike Gustin Innovation Award",
       organization: "Wiess Residential College - Rice University",
       date: "March 2012",
       summary: "Created a knowledge management system for Wiess College by developing an organizational system and sourcing content from dozens of people. Award is granted to one student annually.",
-      resume: ""
+      resume: "Developer/UX Researcher Project Manager Teacher Default"
     },{
       title: "Dr. Bill Wilson Student Initiative Grant",
       organization: "Wiess Residential College - Rice University",
       date: "December 2011",
       summary: "Utilized awarded funds to lead a team of 19 to plan and execute a new inter-organization event for over 600 attendees. Grant awarded through a proposal and selection process.",
-      resume: ""
+      resume: "Developer/UX Researcher Project Manager Teacher Default"
     }];
 
     $scope.experienceCategories = [
@@ -207,7 +331,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
        "Designed structure for database of healthcare start-ups"],
       tags: "Training/Teaching Microsoft Excel Data Analysis Change Management Stakeholder Analysis",
       category: "Professional Experiences",
-      resume: ""
+      resume: "Developer/UX Researcher Project Manager Teacher Default"
     },{
       title: "Undergraduate Researcher",
       organization: "Rice University",
@@ -218,14 +342,11 @@ profileControllers.controller('ResumeCtrl', ['$scope',
        "Developed and executed a research project exploring whether performance aids should be introduced after previous system exposure",
        "Collaborated with lead lab researcher to design a study on voting security and the usability of electronic voting systems",
        "Composed study materials and secured Institutional Review Board research protocol approval",
-       "Proctored experimental sessions",
-       "Utilized SPSS to analyze research data",
-       "Acted as an expert rater",
-       "Assisted in participant recruitment", 
+       "Utilized SPSS to analyze research data", 
        "Reviewed papers being prepped for publication"],
       tags: "SPSS Data Analysis Research Plan Design Usability Testing",
       category: "University Experiences",
-      resume: ""
+      resume: "Developer/UX Researcher Default"
     },{
       title: "After-School Mentor",
       organization: "Fifth Ward Enrichment Program",
@@ -237,7 +358,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
        "Updated pre and post program surveys to increase the value of the information collected"],
       tags: "Teaching/Training Mentoring",
       category: "University Experiences",
-      resume: ""
+      resume: "Teacher"
     },{
       title: "Director and Co-Founder",
       organization: "Rice University Splash",
@@ -249,7 +370,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
        "Recruited 15 undergraduate students to serve as instructors to 47 high school students"],
       tags: "Teaching/Training Project/Program Management Communication Planning and Delivery Stakeholder Analysis",
       category: "University Experiences",
-      resume: ""
+      resume: "Project Manager Teacher Default"
     },{
       title: "Student Taught Course Instructor",
       organization: "Rice University",
@@ -260,7 +381,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
        "Adjusted course content based on skills, interests, and progress of students"],
       tags: "Teaching/Training",
       category: "University Experiences",
-      resume: ""
+      resume: "Teacher"
     },{
       title: "Residential College President",
       organization: "Rice University",
@@ -277,7 +398,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
        "Initiated and directed an $8,000 renovation of the college’s private dining room and one kitchenette"],
        tags: "Project/Program Management Strategic Planning Mentoring Stakeholder Analysis Communication Planning and Delivery",
        category: "University Experiences",
-      resume: ""
+      resume: "Project Manager Teacher Default"
     },{
       title: "Experience Design Researcher",
       organization: "Hewlett-Packard",
@@ -290,7 +411,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       "Assisted the development of design guidelines based on aggregated testing data and published standards"],
       tags: "Usability Testing Data Analysis Research Plan Design Stakeholder Analysis",
       category: "Professional Experiences",
-      resume: ""
+      resume: "Developer/UX Researcher Project Manager Default"
     },{
       title: "Program Coordinator",
       organization: "Volunteer Houston",
@@ -304,7 +425,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
        "Composed a 120-page evaluative report that was submitted to ExxonMobil’s Community Relations Advisor"],
       tags: "Project/Program Management Data Analysis Mentoring",
       category: "Professional Experiences",
-      resume: ""
+      resume: "Project Manager Teacher"
     },{
       title: "Secretary and Site Leader",
       organization: "Rice University Habitat for Humanity",
@@ -328,7 +449,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       "Built a potluck planning app to allow users to solicit and track contributions from event attendees"],
       tags: "Python SQL Flask Git Heroku",
       category: "Classes",
-      resume: ""
+      resume: "Developer/UX Researcher Default"
     },{
       title: "Artifical Intelligence for Robotics",
       organization: "Udacity",
@@ -340,7 +461,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       "Wrote a program for a warehouse robot on a grid tasked with collecting several packages"],
       tags: "Python",
       category: "Classes",
-      resume: ""
+      resume: "Developer/UX Researcher"
     },{
       title: "Human-Computer Interaction",
       organization: "Rice University",
@@ -351,7 +472,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       "Composed a research paper on the use of computers to augment learning"],
       tags: "Usability Testing Research Plan Design",
       category: "Classes",
-      resume: ""
+      resume: "Developer/UX Researcher"
     },{
       title: "Introduction to Human Factors and Ergonomics",
       organization: "Rice University",
@@ -361,7 +482,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       bullets: ["Collaborated with two other students to design a wrist-watch using design specifications based on available research"],
       tags: "Usability Testing Research Plan Design",
       category: "Classes",
-      resume: ""
+      resume: "Developer/UX Researcher"
     },{
       title: "Technical Team Member",
       organization: "Engineers Without Borders",
@@ -373,7 +494,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       "Partnered with local officials, contractors, and the populace to develop a viable solution"],
       tags: "Stakeholder Analysis",
       category: "University Experiences",
-      resume: ""
+      resume: "Project Manager"
     }];
 
     $scope.display = function(skillLabel) {

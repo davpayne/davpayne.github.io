@@ -17,6 +17,10 @@ img {
   max-width: 100%;
 }
 
+.space {
+  padding: 1em;
+}
+
 .overlay{
   display:none;
   position:absolute;
@@ -94,6 +98,9 @@ img {
 /* Styles the resume for printing */
 @media print {
 
+header, footer {
+  display: none;
+}
 body {
   line-height: 100%;
 }
@@ -172,6 +179,6 @@ table {
 }
 
 #experience {
-  width: 65%;
+  width: 70%;
 }
 }
