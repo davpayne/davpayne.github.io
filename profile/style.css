@@ -1,10 +1,14 @@
+/* Changes the font of the site from default */
 body {
   font-family: 'Gafata', sans-serif;
 }
+
+/* formats the icons for github, email, and linkedin */
 .icon {
   max-width: 10%;
 }
 
+/* provides the background for every other section */
 .bg-white-dark {
     border-top: 1px solid #cccbd6;
     border-bottom: 1px solid #cccbd6;
@@ -17,10 +21,12 @@ img {
   max-width: 100%;
 }
 
+/* Used to insert a spacer */
 .space {
   padding: 1em;
 }
 
+/* Formats the overlay on the portfolio */
 .overlay{
   display:none;
   position:absolute;
@@ -43,6 +49,7 @@ img {
   display:block;
 }
 
+/* Provides the animations for the resume */
 .my-repeat-animation.ng-enter, 
 .my-repeat-animation.ng-leave, 
 .my-repeat-animation.ng-move {

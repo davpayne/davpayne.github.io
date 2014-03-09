@@ -1,5 +1,8 @@
+// Creates the main module and injects dependecies
+
 var profile = angular.module('profile', ['ui.bootstrap', 'ngRoute', 'profileControllers', 'ngAnimate']);
 
+// Sets up the routes and links in the controllers
 profile.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
@@ -19,23 +22,3 @@ profile.config(['$routeProvider',
         redirectTo: '/'
       });
   }]);
-/*//Credit for ngBlur and ngFocus to https://github.com/addyosmani/todomvc/blob/master/architecture-examples/angularjs/js/directives/
-profile.directive('ngBlur', function() {
-  return function( scope, elem, attrs ) {
-    elem.bind('blur', function() {
-      scope.$apply(attrs.ngBlur);
-    });
-  };
-});
-
-profile.directive('ngFocus', function( $timeout ) {
-  return function( scope, elem, attrs ) {
-    scope.$watch(attrs.ngFocus, function( newval ) {
-      if ( newval ) {
-        $timeout(function() {
-          elem[0].focus();
-        }, 0, false);
-      }
-    });
-  };
-});*/

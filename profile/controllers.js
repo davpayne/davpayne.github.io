@@ -1,6 +1,8 @@
+// Contains all controllers 
 var profileControllers = angular.module('profileControllers', ['ngResource']);
 
 profileControllers.controller('ButtonsCtrl', ['$scope', function($scope) { 
+ // Tags commented out while tags still being assigned
  /* $scope.quoteTags =[
     {
       label: "Habits",
@@ -157,6 +159,8 @@ profileControllers.controller('ButtonsCtrl', ['$scope', function($scope) {
         tags: ""
       }                      
       ];
+
+    //Serves as a filter
     $scope.display = function(quoteSearch) {
       $scope.quoteSearch = quoteSearch;
     };

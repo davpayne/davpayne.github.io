@@ -1,8 +1,10 @@
 <div class="resume container">
 <h1 class="text-center">David Payne's Resume</h1>
+<!-- Inserts a print button to signify that the resume will be formatted properly for printing by removing buttons, etc. -->
 <p class="text-center hidden-print visible-lg visible-md"><a href="javascript:window.print()" class="btn btn-default">Print <span class="glyphicon glyphicon-print"></span></a></p>
 <div class="row">
     <div class="hidden-print text-center">
+    <!-- Provides the buttons to filter the resume based on role -->
         <div class="btn-group">
             <button type="button" class="btn btn-default" ng-model="resume" btn-radio="'Default'" ng-init="resume='Default'">Default</button>
             <button type="button" class="btn btn-default" ng-model="resume" btn-radio="'Developer/UX Researcher'">Developer/UX Researcher</button>
@@ -67,8 +69,4 @@
         </ul>
     </div>
 </div>
-<!--<p ng-click="show = !show">Show</p>
-    <div ng-show="show">
-        <p>it works!</p>
-    </div>-->
 </div>

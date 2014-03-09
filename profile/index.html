@@ -15,12 +15,12 @@
 
     </head>
     <body>
-<!-- loads the partial. Presents the word 'loading' as resource is loaded or if load fails -->
+<!--Loads the navbar that appears at the top-->
 <div ng-include="'partials/navbar.html'"></div>
+<!-- loads the partial. Presents the word 'loading' as resource is loaded or if load fails -->
 <div ng-view="" id="partial">Loading...</div>
    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!--  <script src="Scripts/jquery.scrollTo/jquery.scrollTo.min.js"></script>  couldn't get to work-->
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
   <script src="controllers.js"></script>
