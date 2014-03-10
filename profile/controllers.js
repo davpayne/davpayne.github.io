@@ -268,7 +268,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       resume: "Developer/UX Researcher"
     },{
       label: "SPSS",
-      level: "Novice",
+      level: "Proficient",
       type: "Technical",
       resume: "Developer/UX Researcher"
     },{
