@@ -467,6 +467,16 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       category: "Classes",
       resume: "Developer/UX Researcher"
     },{
+      title: "A Practitioner Guide to Innovation, Entrepreneurship, and Building Businesses",
+      organization: "Rice University",
+      start: "January 2012",
+      end: "April 2012",
+      summary: "Lab-based class focused on developing, validating, and pitching business ideas.",
+      bullets: ["Collaborated with two other students to design an online GED tutoring service business plan."],
+      tags: "Project/Program Management Stakeholder Analysis",
+      category: "Classes",
+      resume: "Project Manager"
+    },{
       title: "Human-Computer Interaction",
       organization: "Rice University",
       start: "August 2011",
