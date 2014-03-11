@@ -4,7 +4,7 @@
 
   <form>
     <div class='form-group'>
-      <p><input type='text' placeholder='search merchandise' ng-model="searchString.name"><button type="button" class="btn btn-default" ng-click="selectAll()">Select All</button></p>
+      <p><input type='text' placeholder='search merchandise' ng-model="searchString.name">    <button type="button" class="btn btn-default" ng-click="selectAll()">Select All</button></p>
     </div>
     <ul class="list-group">
       <li class="list-group-item" ng-repeat="service in services | filter: searchString" ng-class="{active:service.active}" ng-click="toggleActive(service)">{{service.name}} - {{service.price | currency}}</li>
