@@ -1,0 +1,23 @@
+<div>
+  <h1>Hi {{user.first_name}}
+  <h3>Get all your villanous tools here!</h3>
+
+  <form>
+    <div class='form-group'>
+      <p><input type='text' placeholder='search merchandise' ng-model="searchString.name"><button type="button" class="btn btn-default" ng-click="selectAll()">Select All</button></p>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="service in services | filter: searchString" ng-class="{active:service.active}" ng-click="toggleActive(service)">{{service.name}} - {{service.price | currency}}</li>
+    </ul>
+  </form>
+  <hr />
+  <p>Total: <span> {{total() | currency}} </span> | <span> {{ count() }} </span> items in your cart </p>
+</div>
+<p><a class="btn btn-lg btn-success" href="#/order">Order!</a></p>
+
+<div class="row marketing">
+</div>
+
+<div class="footer">
+  <p>♥</p>
+</div>
