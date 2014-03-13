@@ -276,6 +276,11 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       level: "Proficient",
       type: "Functional",
       resume: "Developer/UX Researcher Project Manager Teacher Default"
+    },{
+      label: "Test-Driven Development",
+      level: "Novice",
+      type: "Functional",
+      resume: "Developer/UX Researcher Project Manager Default"
     }];
     
     $scope.awards = [
