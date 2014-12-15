@@ -1,6 +1,6 @@
 // Creates the main module and injects dependecies
 
-var profile = angular.module('profile', ['ui.bootstrap', 'ngRoute', 'profileControllers', 'ngAnimate']);
+var profile = angular.module('profile', ['profileControllers']);
 
 // Sets up the routes and links in the controllers
 profile.config(['$routeProvider',
