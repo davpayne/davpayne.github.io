@@ -1,0 +1,191 @@
+/* Changes the font of the site from default */
+body {
+  font-family: 'Gafata', sans-serif;
+}
+
+/* formats the icons for github, email, and linkedin */
+.icon {
+  max-width: 10%;
+}
+
+/* provides the background for every other section */
+.bg-white-dark {
+    border-top: 1px solid #cccbd6;
+    border-bottom: 1px solid #cccbd6;
+    background-color: #e7e6f3; /* Older Browsers */
+    background-color: rgba(231, 230, 243, 0.9);
+    padding: .5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Used to insert a spacer */
+.space {
+  padding: 1em;
+}
+
+/* Formats the overlay on the portfolio */
+.overlay{
+  display:none;
+  position:absolute;
+  width: 99%;
+  top: 0;
+  height: 100%;
+  background: none repeat scroll 0 0 #FFFFFF;
+  opacity:0.9;
+  text-decoration:none;
+  color: black;
+  text-align:center;
+  font-size: 100%;
+}
+
+.thumbnail{
+    position:relative;
+}
+
+.thumbnail:hover .overlay {
+  display:block;
+}
+
+/* Provides the animations for the resume */
+.my-repeat-animation.ng-enter, 
+.my-repeat-animation.ng-leave, 
+.my-repeat-animation.ng-move {
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  position:relative;
+}
+
+.my-repeat-animation.ng-enter {
+  left:-10px;
+  opacity:0;
+}
+.my-repeat-animation.ng-enter.ng-enter-active {
+  left:0;
+  opacity:1;
+}
+
+.my-repeat-animation.ng-leave {
+  left:0;
+  opacity:1;
+}
+.my-repeat-animation.ng-leave.ng-leave-active {
+  left:-10px;
+  opacity:0;
+}
+
+.my-repeat-animation.ng-move {
+  opacity:0.5;
+}
+.my-repeat-animation.ng-move.ng-move-active {
+  opacity:1;
+}
+
+#partial {
+  padding-top: 2.5em;
+}
+
+.resume ul {
+  list-style-type: none;
+  padding-left: 1em;
+}
+
+.bullets li {
+  list-style-type: circle;
+}
+
+.organization {
+  font-weight: normal;
+}
+
+/* Styles the resume for printing */
+@media print {
+
+header, footer {
+  display: none;
+}
+body {
+  line-height: 100%;
+}
+
+#partial {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+p, hr{
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#skills td {
+  padding: 0;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  float: left!important;
+}
+.col-md-12 {
+  width: 100%;
+}
+.col-md-11 {
+  width: 91.66666666666666%;
+}
+.col-md-10 {
+  width: 83.33333333333334%;
+}
+.col-md-9 {
+  width: 75%;
+}
+.col-md-8 {
+  width: 66.66666666666666%;
+}
+.col-md-7 {
+  width: 58.333333333333336%;
+}
+.col-md-6 {
+  width: 50%;
+}
+.col-md-5 {
+  width: 41.66666666666667%;
+}
+.col-md-4 {
+  width: 33.33333333333333%;
+}
+.col-md-3 {
+  width: 25%;
+}
+.col-md-2 {
+  width: 16.666666666666664%;
+}
+.col-md-1 {
+  width: 8.333333333333332%;
+}
+
+#skills {
+  width: 30%;
+}
+
+#experience {
+  width: 70%;
+}
+}
