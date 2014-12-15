@@ -324,11 +324,11 @@ profileControllers.controller('ResumeCtrl', ['$scope',
     
     $scope.experiences = [
     {
-      title: "Business Analyst",
+      title: "Senior Analyst",
       organization: "Accenture Management Consulting",
       start: "September 2013",
       end: "Present",
-      summary: "As a Business Analyst in Accenture's Management Consulting practice, David collaborates with Accenture as well as client team members to define opportunities for improvement, generate alternatives, and implement solutions. He has worked across the Oil & Gas and Healthcare fields.",
+      summary: "As a Senior Analyst in Accenture's Management Consulting practice, David collaborates with Accenture as well as client team members to define opportunities for improvement, generate alternatives, and implement solutions. He has worked across the Oil & Gas, Financial Services, Healthcare fields.",
       bullets: [
        "Developed a testing tracker to increase visibility into testing progress and ensure coverage of all scenarios for a large-scale systems integration",
        "Composed a market analysis report to identify opportunities and risks for Accenture",
@@ -502,6 +502,16 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       tags: "Usability Testing Research Plan Design",
       category: "Classes",
       resume: "Developer/UX Researcher"
+    },{
+      title: "Introduction to Biology",
+      organization: "EdX",
+      start: "June 2014",
+      end: "September 2014",
+      summary: "10 week course on biology taught by MIT professors.",
+      bullets: [],
+      tags: "",
+      category: "Classes",
+      resume: "Default"
     },{
       title: "Technical Team Member",
       organization: "Engineers Without Borders",
