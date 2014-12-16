@@ -12,8 +12,7 @@
     <body>
 <!--Loads the navbar that appears at the top-->
 <div ng-include="'navbar.html'"></div>
-<!-- loads the partial. Presents the word 'loading' as resource is loaded or if load fails -->
-<div id="partial">
+<div ng-controller="proSiteController as proSite" id="partial">
   <p>Loading... this thing</p>
   <p>{{1+2}}</p>
 </div>
