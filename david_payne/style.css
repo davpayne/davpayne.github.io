@@ -102,6 +102,14 @@ img {
   font-weight: normal;
 }
 
+#cover-image {
+  position:absolute;
+}
+#cover-text {
+  position: relative;
+}
+
+
 /* Styles the resume for printing */
 @media print {
 
