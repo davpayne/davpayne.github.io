@@ -103,6 +103,8 @@ img {
 }
 
 #cover-image {
+  top: 0;
+  left: 0;
   position:absolute;
 }
 #cover-text {
