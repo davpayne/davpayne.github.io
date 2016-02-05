@@ -235,17 +235,17 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       label: "AngularJS",
       level: "Proficient",
       type: "Technical",
-      resume: "Developer/UX Researcher Default"
+      resume: "Developer/UX Researcher"
     },{
       label: "HTML",
       level: "Proficient",
       type: "Technical",
-      resume: "Developer/UX Researcher Default"
+      resume: "Developer/UX Researcher"
     },{
       label: "CSS",
       level: "Proficient",
       type: "Technical",
-      resume: "Developer/UX Researcher Default"
+      resume: "Developer/UX Researcher"
     },{
       label: "SQL",
       level: "Novice",
@@ -327,13 +327,14 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       title: "Senior Analyst",
       organization: "Accenture Management Consulting",
       start: "September 2013",
-      end: "Present",
-      summary: "As a Senior Analyst in Accenture's Management Consulting practice, David collaborates with Accenture as well as client team members to define opportunities for improvement, generate alternatives, and implement solutions. He has worked across the Oil & Gas, Financial Services, Healthcare fields.",
+      end: "August 2015",
+      summary: "As a Senior Analyst in Accenture's Management Consulting practice, David collaborated with Accenture as well as client team members to define opportunities for improvement, generate alternatives, and implement solutions. He worked across the Oil & Gas, Financial Services, Public Sector, and Healthcare fields.",
       bullets: [
+       "Took over as team lead of team of 4 after sudden and unexpected departure of previous team lead",
        "Developed a testing tracker to increase visibility into testing progress and ensure coverage of all scenarios for a large-scale systems integration",
        "Composed a market analysis report to identify opportunities and risks for Accenture",
        "Trained users and gathered feedback on system design from subject matter experts during multiple rounds of testing",
-       "Developed a training plan to increase lagging training numbers and bring at-risk sites up to at least 80% trained",
+       "Managed two training developers based in India"
        "Analyzed two months worth of help center tickets to identify trends and develop mitigation plans for common issues",
        "Tested Opportunity to Cash processes in Enterprise Resource Planning software package, logged defects, and validated resolutions",
        "Documented to-be process flow and requirements",
@@ -512,6 +513,16 @@ profileControllers.controller('ResumeCtrl', ['$scope',
       tags: "",
       category: "Classes",
       resume: "Default"
+    },{
+      title: "Innovation Teams",
+      organization: "MIT",
+      start: "February 2016",
+      end: "May 2016",
+      summary: "Focused on developing commercialization strategies for technologies originating in MIT labs.",
+      bullets: [],
+      tags: "",
+      category: "Classes",
+      resume: "Developer/UX Researcher Project Manager Default"
     },{
       title: "Technical Team Member",
       organization: "Engineers Without Borders",
