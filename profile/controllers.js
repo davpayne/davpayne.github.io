@@ -334,7 +334,7 @@ profileControllers.controller('ResumeCtrl', ['$scope',
        "Developed a testing tracker to increase visibility into testing progress and ensure coverage of all scenarios for a large-scale systems integration",
        "Composed a market analysis report to identify opportunities and risks for Accenture",
        "Trained users and gathered feedback on system design from subject matter experts during multiple rounds of testing",
-       "Managed two training developers based in India"
+       "Managed two training developers based in India",
        "Analyzed two months worth of help center tickets to identify trends and develop mitigation plans for common issues",
        "Tested Opportunity to Cash processes in Enterprise Resource Planning software package, logged defects, and validated resolutions",
        "Documented to-be process flow and requirements",
