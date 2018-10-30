@@ -1,22 +1,57 @@
-<html lang='en'>
-<head>
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="refresh" content="1;url=http://davpayne.github.io/profile/">
-    <script type="text/javascript">
-            window.location.href = "http://davpayne.github.io/profile/"
-    </script>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+<title>Group 13 Quest 3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 <body>
-    <div class="container">
-        <div class="jumbotron text-center">
-            <h1>Hello!</h1>
-            <p> You've reached the landing page, if you are not automatically redirected, click to go down the rabbit hole.</p>
-            <a href="http://davpayne.github.io/profile/#/" class="btn btn-lg btn-success">Click</a>
-        </div>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <div class="w3-dropdown-hover w3-hide-small">
     </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px, height:800px" id="band">
+    <h2 class="w3-wide">Group 13 - Smart Appliance</h2>
+    <p class="w3-opacity"><i>Smart Lamp using Raspberry Pi, ESP 32, and Smart Plug</i></p>
+    <form>
+      <input type="button" name="btn" value="Turn Light On" onclick="window.location.href='https://maker.ifttt.com/trigger/turn_on/with/key/dQFh_XHA26GFWvo6ourMiL'" />
+    </form>
+    <form>
+      <input type="button" name="btn" value="Turn Light Off" onclick="window.location.href='https://maker.ifttt.com/trigger/turn_off/with/key/dQFh_XHA26GFWvo6ourMiL'" />
+    </form>
+    <form>
+      <input type="button" name="btn" value="Turn Anti-Burglar Schedule On" onclick="window.location.href='https://maker.ifttt.com/trigger/enable_anti_burglar/with/key/dQFh_XHA26GFWvo6ourMiL'" />
+    </form>
+    <div><p></p></div>
+    <iframe src="http://ipcamlive.com/player/player.php?alias=5bd7a64f21305" width="800px" height="600px"/>
+    <p class="w3-justify">Put buttons here</p>
+    <div class="w3-row w3-padding-32">
+      </div>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+       <form>
+<input type="button" value="Put Your Text Here" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'" />
+</form>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
 </body>
+</html>
