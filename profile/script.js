@@ -18,6 +18,9 @@ profile.config(['$routeProvider',
         templateUrl: 'partials/playground.html',
         controller: 'PlaygroundCtrl'
       }).
+      when('/online_appliance', {
+        templateUrl: 'partials/online_appliance.html'
+      }).
       otherwise({
         redirectTo: '/'
       });
